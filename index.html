@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patel Prem S. | Portfolio</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: Arial, sans-serif;
+            background: #080a0f;
+            color: #f5f5f5;
+            line-height: 1.6;
+        }
+        a { color: inherit; text-decoration: none; }
+        .container { width: min(1100px, 92%); margin: auto; }
+
+        header {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            background:
+                radial-gradient(circle at 80% 20%, rgba(255,193,7,.15), transparent 28%),
+                radial-gradient(circle at 20% 80%, rgba(0,120,255,.12), transparent 25%),
+                #080a0f;
+        }
+        nav {
+            position: fixed; top: 0; left: 0; right: 0; z-index: 10;
+            background: rgba(8,10,15,.92);
+            border-bottom: 1px solid #222;
+        }
+        nav .container {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 18px 0;
+        }
+        .logo { font-size: 22px; font-weight: bold; color: #ffc107; }
+        nav ul { display: flex; gap: 25px; list-style: none; }
+        nav a:hover { color: #ffc107; }
+
+        .hero { padding-top: 90px; }
+        .tag { color: #ffc107; letter-spacing: 3px; font-size: 14px; font-weight: bold; }
+        h1 { font-size: clamp(45px, 8vw, 82px); line-height: 1; margin: 15px 0; }
+        h1 span { color: #ffc107; }
+        .hero p { max-width: 650px; color: #c9c9c9; font-size: 19px; }
+        .btn {
+            display: inline-block; margin-top: 28px; padding: 13px 24px;
+            border: 1px solid #ffc107; color: #080a0f; background: #ffc107;
+            font-weight: bold; border-radius: 5px;
+        }
+        .btn.alt { margin-left: 10px; background: transparent; color: #ffc107; }
+
+        section { padding: 90px 0; border-bottom: 1px solid #1c1f26; }
+        .section-title { color: #ffc107; font-size: 38px; margin-bottom: 35px; }
+        .about { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+        .card {
+            background: #10131a; border: 1px solid #252a33; border-radius: 14px;
+            padding: 28px;
+        }
+        .card p { color: #ccc; margin-bottom: 16px; }
+        .quote { color: #ffc107 !important; font-weight: bold; font-size: 20px; }
+
+        .education { display: grid; grid-template-columns: repeat(2,1fr); gap: 20px; }
+        .edu h3 { color: #ffc107; margin-bottom: 8px; }
+        .edu small { color: #aaa; }
+
+        .skills { display: flex; flex-wrap: wrap; gap: 12px; }
+        .skill {
+            padding: 10px 16px; border: 1px solid #ffc107;
+            border-radius: 30px; color: #ffc107; background: #111;
+        }
+
+        .contact-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 20px; }
+        .contact-card strong { display: block; color: #ffc107; margin-bottom: 6px; }
+
+        footer { text-align: center; padding: 35px 0; color: #999; }
+        footer span { color: #ffc107; }
+
+        @media (max-width: 700px) {
+            nav ul { display: none; }
+            .about, .education, .contact-grid { grid-template-columns: 1fr; }
+            section { padding: 65px 0; }
+            h1 { font-size: 52px; }
+            .hero p { font-size: 17px; }
+            .btn.alt { margin-left: 0; margin-top: 10px; }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div class="container">
+        <a class="logo" href="#home">PPS.</a>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<header id="home">
+    <div class="container hero">
+        <div class="tag">BCA STUDENT • WEB DESIGN ENTHUSIAST</div>
+        <h1>Patel <span>Prem S.</span></h1>
+        <p>
+            Hello! I'm Prem Patel 👋<br>
+            A BCA 1st Year student at SVIT, Vasad, interested in technology,
+            web designing, photography and creative editing.
+        </p>
+        <a class="btn" href="#about">Explore My Portfolio</a>
+        <a class="btn alt" href="https://instagram.com/premm.093" target="_blank">Instagram</a>
+    </div>
+</header>
+
+<section id="about">
+    <div class="container">
+        <h2 class="section-title">ABOUT ME</h2>
+        <div class="about">
+            <div class="card">
+                <p>Hello! I'm Prem Patel 👋</p>
+                <p>
+                    I am a BCA 1st Year student at SVIT, Vasad. I am interested in
+                    technology, web designing, photography and creative editing.
+                </p>
+                <p>
+                    I enjoy learning new things and improving my skills. I am currently
+                    learning HTML, C Programming and other computer-related skills.
+                </p>
+                <p>
+                    My goal is to build a successful career in the IT field and create
+                    something meaningful with my skills.
+                </p>
+                <p class="quote">“Learn • Create • Grow 🚀”</p>
+            </div>
+
+            <div class="card">
+                <h3 style="color:#ffc107; margin-bottom:15px;">CURRENT FOCUS</h3>
+                <p>🌐 HTML & Web Designing</p>
+                <p>💻 C Programming</p>
+                <p>📚 Computer & IT Skills</p>
+                <p>📷 Photography</p>
+                <p>🎨 Creative Editing</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="education">
+    <div class="container">
+        <h2 class="section-title">EDUCATION</h2>
+        <div class="education">
+            <div class="card edu">
+                <h3>BCA — 1st Year</h3>
+                <p>SVIT, Vasad</p>
+                <small>Currently studying</small>
+            </div>
+            <div class="card edu">
+                <h3>12th Pass</h3>
+                <p>Higher Secondary Education</p>
+                <small>Completed</small>
+            </div>
+            <div class="card edu">
+                <h3>10th Pass</h3>
+                <p>Secondary Education</p>
+                <small>Completed</small>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="skills">
+    <div class="container">
+        <h2 class="section-title">SKILLS</h2>
+        <div class="card">
+            <div class="skills">
+                <div class="skill">HTML</div>
+                <div class="skill">C Programming</div>
+                <div class="skill">Web Designing</div>
+                <div class="skill">Photography</div>
+                <div class="skill">Creative Editing</div>
+                <div class="skill">Computer Basics</div>
+                <div class="skill">Learning & Problem Solving</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="container">
+        <h2 class="section-title">CONTACT ME</h2>
+        <div class="contact-grid">
+            <div class="card contact-card">
+                <strong>Instagram</strong>
+                <a href="https://instagram.com/premm.093" target="_blank">@premm.093</a>
+            </div>
+            <div class="card contact-card">
+                <strong>Email</strong>
+                <a href="mailto:patelprem8013@gmail.com">patelprem8013@gmail.com</a>
+            </div>
+            <div class="card contact-card">
+                <strong>WhatsApp</strong>
+                <a href="https://wa.me/919327527129" target="_blank">+91 93275 27129</a>
+            </div>
+            <div class="card contact-card">
+                <strong>College</strong>
+                <p>SVIT, Vasad</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 <span>Patel Prem S.</span> • Learn • Create • Grow 🚀</p>
+</footer>
+
+</body>
+</html>
